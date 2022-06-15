@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC2 Erick Aronés Garcilazo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div style="position: absolute; top: 5px; left: 10px">
+      <div class="content">
+        <h3 style="text-align: center"><u>Ambient Light</u></h3>
+        <h4>Light intensity</h4>
+        <input type="range" id="lightIntensity" value="100" min="0" max="200" step="1" />
+        <label for="lightIntensity" id="textLightIntensity">100%</label>
+        <h4>Color</h4>
+        <input type="range" id="ambientColorRed" value="100" min="0" max="100" step="1" />
+        <label for="ambientColorRed">Red</label>
+        <input type="range" id="ambientColorGreen" value="100" min="0" max="100" step="1" />
+        <label for="ambientColorGreen">Green</label>
+        <input type="range" id="ambientColorBlue" value="100" min="0" max="100" step="1" />
+        <label for="ambientColorBlue">Blue</label>
+      </div>
+      <div class="content">
+        <h3 style="text-align: center"><u>Diffuse Light</u></h3>
+        <h4>Diffuse vector</h4>
+        <input type="range" id="posX" value="0" min="-10" max="10" step="1" />
+        <label for="posX" id="textPosX">X 0</label>
+        <input type="range" id="posY" value="0" min="-10" max="10" step="1" />
+        <label for="posY" id="textPosY">Y 0</label>
+        <input type="range" id="posZ" value="0" min="-10" max="10" step="1" />
+        <label for="posZ" id="textPosZ">Z 0</label>
+        <h4>Color</h4>
+        <input type="range" id="diffuseColorRed" value="100" min="0" max="100" step="1" />
+        <label for="diffuseColorRed">Red</label>
+        <input type="range" id="diffuseColorGreen" value="100" min="0" max="100" step="1" />
+        <label for="diffuseColorGreen">Green</label>
+        <input type="range" id="diffuseColorBlue" value="100" min="0" max="100" step="1" />
+        <label for="diffuseColorBlue">Blue</label>
+      </div>
+      <div class="content">
+        <h3 style="text-align: center"><u>Lantern (activar)</u></h3>
+        <h4>Color</h4>
+        <input type="range" id="lanternColorRed" value="100" min="0" max="100" step="1" />
+        <label for="lanternColorRed">Red</label>
+        <input type="range" id="lanternColorGreen" value="100" min="0" max="100" step="1" />
+        <label for="lanternColorGreen">Green</label>
+        <input type="range" id="lanternColorBlue" value="100" min="0" max="100" step="1" />
+        <label for="lanternColorBlue">Blue</label>
+      </div>
+      <div class="content">
+        <h3 style="text-align: center"><u>LightSource (activar)</u></h3>
+        <!-- <h4>Color</h4> -->
+        <input type="range" id="lsColorRed" value="100" min="0" max="100" step="1" />
+        <label for="lsColorRed">Red</label>
+        <input type="range" id="lsColorGreen" value="100" min="0" max="100" step="1" />
+        <label for="lsColorGreen">Green</label>
+        <input type="range" id="lsColorBlue" value="100" min="0" max="100" step="1" />
+        <label for="lsColorBlue">Blue</label>
+        <input type="range" id="posXls" value="10" min="-5" max="10" step="0.1" />
+        <label for="posXls" id="textPosXls">X 10</label>
+      </div>
+    </div>
+    <div style="position: absolute; top: 10px; right: 10px">
+      <div class="content">
+        <h3 style="text-align: center"><u>States</u></h3>
+        <input id="state1" type="radio" name="state" value="state1" checked />Normal<br />
+        <input id="state2" type="radio" name="state" value="state2" /> Activar linterna <br />
+        <input id="state3" type="radio" name="state" value="state3" /> Activar fuente de luz
+      </div>
+    </div>
+    <canvas id="canvitas"></canvas>
+    <script type="module" src="js/code.js"></script>
+  </body>
+</html>
